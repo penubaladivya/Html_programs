@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <style>
+      form{
+        border: 2px solid black;
+        padding: 10px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <form>
+      <label>First Name</label>
+      <input type="text" name="fname" value="Raghu" readonly>
+      <br>
+      <br>
+
+      <label>Last Name</label>
+      <input type="text" name="lname" size="50" maxlength="10">
+      <br>
+      <br>
+
+      <label>SurName:</label>
+      <input type="text" name="sname" value="Surname NA" disabled>
+      <br>
+      <br>
+
+      <label>choose location :</label>
+      <br>
+      <input type="checkbox" id="location1" value="banglore">
+      <label for="location1">Bengaluru</label>
+      <input type="checkbox" id="location2" value="chennai">
+      <label for="location2">chennai</label>
+      <input type="checkbox" id="location3" value="hyderbad">
+      <label for="location3">hyderbad</label>
+      <br>
+      <br>
+
+      <label>select Gender:</label>
+      <input type="radio" id="male" value="male" name="gender">
+      <label for="male">male</label>
+      <input type="radio" id="female" value="female" name="gender">
+      <label for="female">female</label>
+      <br>
+      <br>
+
+      <label>choose technology</label>
+      <select name="course" id="course">
+        <option>javascript</option>
+        <option>Html</option>
+        <option>Css</option>
+      </select>
+      <br>
+      <br>
+
+      Time: <input type="time" required> <br> <br>
+      Date: <input type="date"> <br> <br>
+      Email: <input type="email"> <br> <br>
+      <input type="submit">
+    </form>
+  </body>
+</html>
