@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <style>
+      .unOrderCountry li{
+        display: inline;
+        color: blue;
+      }
+      .unOrderCity{
+        background-color: burlywood;
+        padding:20px;
+      }
+      .unOrderCity li{
+        background-color: cadetblue;
+        margin: 4px;
+      }
+      .unOrder{
+        color: brown;
+        border: 1px solid black;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: oblique;
+        font-variant: small-caps;
+        font-size: 15px;
+        padding: 40px;
+      }
+      .dataOfStocks:hover{
+        background-color: lightskyblue;
+        padding: 40px;
+        text-align: center;
+      }
+      h1{
+        visibility: hidden;
+      }
+      span{
+        display: block;
+      }
+      .firstChild li:first-child{
+        color: blue;
+        padding:10px;
+      }
+      a:active{
+        color: blue;
+      }
+      a:hover{
+        color: pink;
+      }
+      a:visited{
+        color: green;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="cityClass">
+      <p>List of Cities</p>
+    </div>
+    <ul class="unOrderCountry">
+      <li>England</li>
+      <li>Scottland</li>
+      <li>Ireland</li>
+    </ul>
+    <ul class="unOrderCity">
+      <li>Bombay</li>
+      <li>Madras</li>
+      <li>Culcutta</li>
+    </ul>
+    <ul class="unOrder">
+      <li>Tea</li>
+      <li>Cofee</li>
+      <li>Milk</li>
+    </ul>
+    <div class="dataOfStocks">
+      <h1>TATA Stocks of India</h1>
+      <span>Tata Motors</span>
+      <span>Tata Steels</span>
+      <span>Tata Chemicals</span>
+    </div>
+    <hr>
+    <div class="firstChild">
+      <li>Finserv Company data</li>
+      <li>First data</li>
+    </div>
+    <div style="padding: 20px; border: 1px solid black;height: 200px;">
+      <div style="background-color: lightskyblue;height: 100px; width: 300px; float: left;">
+        <a href="http://www.google.com" target="_blank">Visit Google</a><br>
+        <a href="http://www.yahoo.com" target="_blank" >Visit yahoo</a>
+      </div>
+      <div style="background-color: lightsalmon; height: 150px; width: 500px;float: right;border-radius: 1rem;">
+        1)inline styles are least used ,wrong practice in real time implementation. <br>
+        2)id#-used for header footer or some unique elements on page. <br>
+        3)class .-is used to apply styles for multiple elements. <br>
+        4)element style->h1,p-more powerfull should use only required.
+      </div>
+    </div>
+  </body>
+</html>
