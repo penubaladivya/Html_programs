@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <style>
+      .stickypos{
+        width: 100%;
+        height:200px;
+        top: 0px;
+        border: 2px solid black;
+        background-color: wheat;
+        position: sticky;
+      }
+      .staticpos{
+        width: 100%;
+        height:200px;
+        border: 3px solid black;
+        right: 0px;
+        position: static;
+      }
+      .relativepos{
+        width: 400px;
+        height: 200px;
+        border: 3px solid black;
+        top: 80px;
+        right: 0px;
+        position: relative;
+      }
+      .absolutepos{
+        width: 400px;
+        height: 200px;
+        top: 300px;
+        right: 300px;
+        border: 3px solid black;
+        background-color: lightseagreen;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Positioning</h3>
+    <p>static will always positioned according to the normal flow of page</p>
+    <hr>
+    <div class="stickypos">
+      sticky is always available for the user->mostly used to display ads
+    </div>
+    <div class="staticpos">
+      static position is always comes with the normal flow of page
+      <br>
+      by default we will have static position for web pages
+    </div>
+    <div class="relativepos">
+      relative positions of the element is used to align the div , based on relative previous element
+    </div>
+    <div class="absolutepos">
+      absolue position will align the div in the page , irrespective of prev elements and there dimensions
+    </div>
+    <div style="height: 500px;"></div>
+  </body>
+</html>
