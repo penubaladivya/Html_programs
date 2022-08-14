@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Conditional statements</title>
+  </head>
+  <body>
+    <script>
+      let hours=18
+      if(hours>15)
+      {
+        document.write("Good Evening")
+      }
+      document.write('<hr>')
+      let am=13
+      if(am<12)
+      {
+        document.write('Good Morning')
+      }
+      else{
+        document.write("Good Afternoon")
+      }
+      document.write('<hr>')
+
+      let time=18
+      if(time<10){
+        greeting="Good morning!"
+      }
+      else if (time<20){
+        greeting="Good day!!"
+      }
+      else if(time>12){
+        greeting="Good Afternoon"
+      }
+      else{
+        console.log('not a valid greeting')
+      }
+      document.write (greeting)
+    </script>
+  </body>
+</html>
