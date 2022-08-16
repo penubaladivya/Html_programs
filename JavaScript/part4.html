@@ -4,36 +4,97 @@
   </head>
   <body>
     <script>
-      let hours=18
-      if(hours>15)
-      {
-        document.write("Good Evening")
+      let hours = 18;
+      if (hours > 15) {
+        document.write("Good Evening");
       }
-      document.write('<hr>')
-      let am=13
-      if(am<12)
-      {
-        document.write('Good Morning')
+      document.write("<hr>");
+      let am = 13;
+      if (am < 12) {
+        document.write("Good Morning");
+      } else {
+        document.write("Good Afternoon");
       }
-      else{
-        document.write("Good Afternoon")
-      }
-      document.write('<hr>')
+      document.write("<hr>");
 
-      let time=18
-      if(time<10){
-        greeting="Good morning!"
+      let time = 18;
+      if (time < 10) {
+        greeting = "Good morning!";
+      } else if (time < 20) {
+        greeting = "Good day!!";
+      } else if (time > 12) {
+        greeting = "Good Afternoon";
+      } else {
+        console.log("not a valid greeting");
       }
-      else if (time<20){
-        greeting="Good day!!"
+      document.write(greeting);
+
+      let day = " ";
+      switch (new Date().getDay()) {
+        case 0:
+          day = "sunday";
+          break;
+        case 1:
+          day = "monday";
+          break;
+        case 2:
+          day = "tuesday";
+          break;
+        case 3:
+          day = "Wednesday";
+          break;
+        case 4:
+          day = "Thursday";
+          break;
+        case 5:
+          day = "friday";
+          break;
+        case 6:
+          day = "saturday";
+          break;
+        default:
+          day = "error";
+          break;
       }
-      else if(time>12){
-        greeting="Good Afternoon"
+      document.write("<hr>");
+      document.write(day)
+
+      console.log('while loop')
+      let num=10
+      while(num<15){
+        console.log(num)
+        num++
       }
-      else{
-        console.log('not a valid greeting')
+      console.log('for loop')
+      for(let i=0; i<10; i++){
+        console.log("value of i",i)
       }
-      document.write (greeting)
+
+      console.log("for in***")
+      let arr=[1,3,5]
+      for(var i in arr){
+        console.log(arr[i], "index", i)
+      }
+
+      let obj={a:1 , b:2 , place:"bengaluru"}
+      for(let i in obj){
+        console.log("key",i)
+        console.log("value",obj[i])
+        console.log("iteration ended")
+      }
+      let recobj=[
+        { eno:101,ename:'raghav',salary:10000},
+        { eno:102,ename:'Anitha',salary:20000},
+        { eno:103,ename:'Lasya',salary:15000}
+      ]
+//fetch only data above 14000 salary
+      for(let i in recobj){
+        if(recobj[i].salary>14000){
+          // console.log("key",i)
+          // console.log("value",recobj[i])
+          console.log(recobj[i])
+        }
+      }
     </script>
   </body>
 </html>
