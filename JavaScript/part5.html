@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>arrays</title>
+  </head>
+  <body>
+    <script>
+      let arr=[]
+      console.log(arr)//empty array
+      let num_arr=[1,3,4,7]
+      console.log(num_arr[0])
+      console.log(num_arr[1])
+      console.log(num_arr[2])
+      console.log(num_arr[3])
+      let str_arr=['apple','banana','orange']
+      console.log(str_arr[0])
+      console.log(str_arr[1])
+      console.log(str_arr[2])
+      let rec=[101,'ram',true]
+      console.log(rec)
+
+      //push and pop (adds and removes the element from end)
+      console.log(str_arr.pop())
+      console.log(str_arr)
+      str_arr.push('kiwi')
+      console.log(str_arr)
+      rec.push('male')
+      console.log(rec)
+
+      //unshift and shift (adds and removes the element from starting first index)
+      let str_arr1=['divya','megha','pavan','hari']
+      str_arr1.shift()
+      console.log(str_arr1)
+      str_arr1.unshift('sujatha')
+      console.log(str_arr1)
+
+      //concat method
+      var data1=['ram','krishna']
+      var data2=['raghu','tony','abdul']
+      var data3=['shankar','kumar','madhu']
+      let res=data1.concat(data2,data3)
+      console.log(res)
+
+      //sort
+      var places=['bengaluru','Agra','mysore','delhi','ooty']
+      places.sort()
+      console.log(places)
+
+      //reverse
+      let rev=places.reverse()
+      console.log(rev)
+      console.log(places.length)
+
+      //splice-used to remove and insert data in array
+      let fruits=['apple','banana','orange','kiwi','mango','papaya','watermelon']
+      console.log(fruits)
+      //.splice(index,how many to remove,item1,item2)
+      fruits.splice(1,3,'cabbage','pumpkin')
+      console.log(fruits)//['apple', 'cabbage', 'pumpkin', 'mango', 'papaya', 'watermelon']
+
+      //slice
+      //slice(index,length)
+      let fruits_1=['apple','banana','orange','kiwi','mango','papaya','watermelon']
+      let resFruits=fruits_1.slice(1,4)
+      console.log(resFruits)
+
+      //includes will check the data is available or not and returns boolean
+      console.log(fruits_1.includes('grapes'))
+    </script>
+  </body>
+</html>
