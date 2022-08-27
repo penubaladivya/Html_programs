@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <title>strings</title>
+  </head>
+  <body>
+    <script>
+      let alpha="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      console.log(alpha.length);
+      console.log(typeof(alpha));
+
+      let welcome="welcome to javascript,javascript";
+      let react=welcome.replace('javascript','react');//welcome to react,javascript
+      console.log(react);
+
+      let mulstmt='please visit microsoft and microsoft';
+      let replstmt=mulstmt.replace(/microsoft/g,'bengaluru')
+      console.log(replstmt)//please visit bengaluru and bengaluru
+
+      let hello_data="hello world";
+      let convUppr=hello_data.toUpperCase();
+      console.log(convUppr);
+
+      let stmts="WELCOME TO STRINGS";
+      let convLowr=stmts.toLowerCase();
+      console.log(convLowr);
+
+      let concat_text1='hello';
+      let concat_text2='bengaluru';
+      let concat_text3=concat_text1.concat(',',concat_text2);
+      console.log(concat_text3);
+
+      let txt_trim='   hello bengauru   ';
+      console.log(txt_trim);
+      let trimmed=txt_trim.trim();
+      console.log('trimed spaces left and right');
+      console.log(trimmed);
+
+      let text='mumbai';
+      let char=text.charAt(0);
+      console.log(char);
+
+      let str="apple, banana, kiwi";
+      let part=str.slice(7,13);
+      console.log(part);
+
+      let split_text='a,b,c,d,e,f';
+      let splitRes=split_text.split(',');
+      console.log(splitRes);
+
+      //
+      let accounts=[
+        {acct:"1002347,102311,2012375,3002711"}
+      ]
+
+      let namesArr=[
+        {names:"ram , raghu, chandra, kiran"}
+      ]
+
+      let locations=[
+        {places:"delhi, mumbai, chennai, newyork"}
+      ]
+
+      //write a function and return a object as below
+      let re=[
+        {name:"kiran",acct:"1002347",place:"mumbai"},
+        {name:"ram",acct:"102311",place:"chennai"},
+        {name:"raghu",acct:"2012375",place:"delhi"},
+        {name:"chandra",acct:"3002711",place:"newyork"}
+      ]
+
+      let obj={
+        name:'ram',
+        location:'bengaluru',
+        available:true,
+        datejoined:'2020-07-28',
+        empno:215
+      }
+
+      //iterate and get values
+      //available to status
+      //datejoined 28
+      //location:delhi
+      //add last name raghu
+      //fetch all keys 
+      //fetch all values
+
+      for(let i in obj)
+      {
+        console.log('key',i)
+        console.log('values',obj[i])
+      }
+
+      
+
+    </script>
+  </body>
+</html>
