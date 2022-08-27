@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Numbers</title>
+  </head>
+  <body>
+    <script>
+      let myNum=32;
+      console.log(typeof(myNum))
+      let convNum=myNum.toString()
+      console.log(typeof(convNum))
+
+      let num_fixed=9.656;
+      console.log(num_fixed.toFixed(0))
+      console.log(num_fixed.toFixed(2))
+      console.log(parseInt("10"))
+      console.log(parseInt("10.33"))
+      console.log(parseFloat("10.33"))
+      console.log(parseFloat("10"))
+
+      //date function
+      let dt=new Date()
+      console.log(dt)//Sat Aug 27 2022 11:16:49 GMT+0530 (India Standard Time)
+      
+      //passing date externally
+      //months->0-jan, 1-feb,..11-dec
+      let dt1=new Date(2020, 2, 25,10,33,30)
+      //YYYY MM DD HH MM SS
+      console.log(dt1)//Wed Mar 25 2020 10:33:30 GMT+0530 (India Standard Time) 
+
+      const dt2=new Date(2020, 1, 20)
+      console.log(dt2)//Thu Feb 20 2020 00:00:00 GMT+0530 (India Standard Time)
+
+      //timestamp-YYYY-MM-DDTHH:MM:SS
+      let dt_time=new Date("2020-01-20T07:30:15")
+      console.log(dt_time)//Mon Jan 20 2020 07:30:15 GMT+0530 (India Standard Time)
+
+      //date starts from jan 1,1970
+      console.log(dt_time.getTime())//1579485615000
+      console.log(dt_time.getDate())//20
+      console.log(dt_time.getDay())//1-monday
+      console.log(dt_time.getFullYear())//2020
+
+      //
+      const curr_date=new Date()
+      console.log(curr_date)//Sat Aug 27 2022 11:27:17 GMT+0530 (India Standard Time)
+      console.log(curr_date.getHours())//11
+      console.log(curr_date.getMinutes())//29
+      console.log(curr_date.getSeconds())//10
+
+      //math functions
+      console.log("********MATH FUNCTIONS********")
+      console.log(Math.ceil(4.3))//5
+      console.log(Math.floor(4.7))//4
+      console.log(Math.trunc(4.78))//4
+      console.log(Math.sign(-47))//-1
+      console.log(Math.sign(0))//0
+      console.log(Math.sign(47))//1
+      console.log(Math.pow(5,3))//125
+      console.log(Math.sqrt(81))//9
+      console.log(Math.abs(-4.7))//4.7
+      console.log(Math.min(0,150,-90,70))//-90
+      console.log(Math.max(0,150,-90,70))//150
+
+    </script>
+  </body>
+</html>
