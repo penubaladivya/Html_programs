@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+      const obj={
+        //key:value
+      }
+      obj.name='ram'
+      obj.location='bengaluru'
+      console.log(obj)
+      console.log(obj.location)
+
+      let person={
+        eno:101,
+        ename:"john",
+        location:"bengaluru"
+      }
+      for(let i in person)
+      {
+        console.log('key:',i)
+        console.log('value:',person[i])
+      }
+
+      //find only keys
+      let keys=Object.keys(person)
+      console.log(keys)
+
+      //find only values
+      let values=Object.values(person)
+      console.log(values)
+
+      //conversion from object to string
+      //json.stringify
+      //javascript object notation
+      let json_str=JSON.stringify(person)
+      console.log('string object',json_str)//string object {"eno":101,"ename":"john","location":"bengaluru"}
+      console.log("JSON.parse converts stringified obj to object",JSON.parse(json_str))//{eno: 101, ename: 'john', location: 'bengaluru'}
+
+      //replacement in object
+      for(let i in person){
+        if(person[i]=="john"){
+          person[i]="Divya"
+        }     
+      }
+      console.log(person)
+
+      //adding to value
+      for(let i in person){
+        if(person[i]=="Divya"){
+          person[i]=person[i]+" "+"shree"
+        }     
+      }
+      console.log(person)
+    </script>
+  </body>
+</html>
