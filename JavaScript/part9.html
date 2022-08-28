@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Functions</title>
+  </head>
+  <body>
+    <script>
+      //simple function
+      function add(){
+        let a=10;
+        let b=20;
+        let c;
+        c=a+b;
+        return c
+      }
+      let res=add()
+      console.log(res)
+
+      //parameterised function
+      function calc(a,b){
+        return a/b
+      }
+      let resCalc=calc(20,2)
+      let resCalc1=calc(100,50)
+      let resCalc2=calc(625,25)
+      console.log(resCalc,resCalc1,resCalc2)
+
+      // write a function to calculate salary, pf,tax,professional tax of a employee
+
+      function func(sal,pf,tax,pro_tax){
+        return sal+pf+tax+pro_tax
+      }
+      let emp_res=func(10000,500,500,200)
+      console.log(emp_res)
+      
+    </script>
+  </body>
+</html>
