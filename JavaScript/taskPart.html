@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <title>Task</title>
+  </head>
+  <body>
+    <script>
+      
+      let obj={
+        name:'ram',
+        location:'bengaluru',
+        available:true,
+        datejoined:'2020-07-28',
+        empno:215
+      }
+      console.log(obj)
+
+      //1-iterate and get values
+      for(let i in obj){
+        console.log('key:',i)
+        console.log('value:',obj[i])
+      }
+
+      //2-available to status
+      console.log(obj.available)
+
+      //3-date joined 
+      obj.datejoined=new Date().getDate()
+      console.log(obj.datejoined)
+
+      //4-location:DElhi
+      for(let i in obj){
+        if(obj[i]=='bengaluru'){
+          obj[i]='Delhi'
+        }
+      }
+      console.log(obj)
+
+      //5-add lastname:raghu
+      obj.lastName='Raghu'
+      console.log(obj)
+
+      //6-fetch all keys
+      let keys=Object.keys(obj)
+      console.log(keys)
+
+      //7-fetch all values
+      let values=Object.values(obj)
+      console.log(values)
+
+      //convert an object to string
+      let json_str=JSON.stringify(obj)
+      console.log("converted string:",json_str)
+      console.log(typeof(json_str))
+
+      //convert array [1,3,5]to [3,5,7]
+      let numArray=[1,3,5]
+      for(let i=0;i<=2;i++){
+        numArray[i]+=2
+      }
+      console.log(numArray)
+
+      //math.trunc(3.14) value??
+      console.log(Math.trunc(3.14))//3
+
+      //new date(2020,5,25)returnvalue???
+      let date=new Date(2020,5,25)
+      console.log(date)//Thu Jun 25 2020 00:00:00 GMT+0530 (India Standard Time)
+
+      //convert "jack and jill",to "black and brown"
+      let str="jack and jill"
+      let rplc_str=str.replace("jack and jill","black and brown")
+      console.log(rplc_str)
+
+      //parseInt("13.45")
+      console.log(parseInt("13.45"))//13
+
+      //maths.abs(-12)value??
+      console.log(Math.abs(-12))//12
+
+      //[1,4,5, ,67,34] convert to [1,6,7,34] use methods
+      let arry_num=[1,4,5, ,67,34]
+      arry_num.splice(1,4,6,7)
+      console.log(arry_num)
+
+      //[10,20,30] convert to [20,30]
+      let arry=[10,20,30]
+      let res_arry=arry.slice(1,3)
+      console.log(res_arry)
+
+      //let arr=['23,ram,bengaluru']->convert to [23,'ram','bengaluru']
+      let arr='23,ram,bengaluru'
+      let spl_arr=arr.split(',')
+      console.log(spl_arr)
+
+    </script>
+  </body>
+</html>
