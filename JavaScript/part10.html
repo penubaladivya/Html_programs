@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>API Interface</title>
+  </head>
+  <body>
+    <script>
+      /*
+      fetch is used to call an Api
+      API->App Program Interface
+      AJAX->Function in the backend will trigger the APi
+      AJAX->method new XMLHttpRequest()
+      ->Api is used to connect to data sources
+      like -json ,xml,sql,exel
+
+      ->api will be in the format of url
+      https://api/data.json
+      ->syntax:fetch(url).then((res)=>{
+        response//data
+      })
+
+      https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json
+      */
+
+      let resData=[]
+      const apiData=fetch( 'https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json')
+      apiData.then(response=>{
+        if(!response.ok){
+          throw new Error(`http,${response.status}`)
+        }
+        console.log(response)
+        console.log('status code',response.status)
+        return response.json()
+      }).then((json)=>{
+        console.log(json)
+        resData.push(...json)
+        console.log(resData)
+      })
+    </script>
+  </body>
+</html>
