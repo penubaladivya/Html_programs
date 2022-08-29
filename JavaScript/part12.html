@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>forms</title>
+    <script type="text/javascript" src="formvalidate.js"></script>
+  </head>
+  <body>
+    <form name="myForm" onsubmit="return validateform()">
+      Name:
+      <input type="text" name="name"/>
+      <span id="name"></span>
+      <br/>
+
+      Password: <input type="password" name="password"><br/>
+
+      Compare Password:<input type="password" name="passwordCompare"><br/>
+      Email: <input type="email" name="email" ><br/>
+      age: <input type="text" maxlength="2" name="age"><br/>
+      Account Number: <input type="text" name="acctnumber" maxlength="16" minlength="5"><br/>
+      <input type="submit" value="register"> <br/>
+    </form>
+  </body>
+</html>
