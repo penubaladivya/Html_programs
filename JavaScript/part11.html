@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <title>Arrow Functions</title>
+  </head>
+  <body>
+    <script>
+      //function -arrow
+      let addFunc=function(x,x){
+        return x*x
+      }
+      console.log(addFunc(3,4))
+      //duplicate parameters are accepted in normal function
+
+      //ES6-2015-arrow function=>duplicate parameters are not allowed in this context
+      let add=(a,b)=>a*b
+      console.log(add(3,4))
+
+      let area=(length,breadth)=>{
+        let height=20
+        return length*breadth*height
+      }
+      console.log(area(10,70))
+
+      //map:stores data in key and value pairs
+      //map is introduced in ES6-Ecma Script 6
+      //map can do iteration and also it can store data
+      //object can only store the data
+      //map can have values as objects ,array ,numbers and string
+
+      console.log("******map******")
+      let mapVar=new Map()//empty map
+      const empDetails=new Map()
+      empDetails.set('info',{name:'raghu',age:26})
+      empDetails.set('info1',{name:'asha',age:25})
+      console.log(empDetails)
+
+      //fetch a particular key in map
+      //get method fetches particular data via key
+      let resEmp=empDetails.get('info')
+      console.log(resEmp)
+
+      empDetails.delete('info')
+      console.log(empDetails)
+
+      //iterate on map
+      let mapData=new Map()
+      mapData.set('name','raghu')
+      mapData.set('age',27)
+      console.log(mapData)
+      for(let [key,value] of mapData){
+        console.log(key+'-'+value)
+      }
+
+      //self iteration in map
+      let data=[11.44,22.12,55.56]
+      let results=data.map(Math.floor)
+      console.log(results)
+
+      let rsdata=data.map((item)=>{
+        console.log(item)
+        return Math.floor(item)
+      })
+      console.log(rsdata)
+
+      let arrsalary=[10000,20000,30000]
+      let modifiedsal=arrsalary.map((item)=>{
+        return item+1000
+      })
+      console.log(modifiedsal)
+
+      let maplocations=new Map()
+      maplocations.set('bengaluru',[
+        {name:'anitha',salary:20000},
+        {name:'chandu',salary:18000}
+      ])
+      maplocations.set('chennai',[
+        {name:'sita',salary:30000},
+        {name:'kumar',salary:9000}
+      ])
+      console.log(maplocations)
+
+      //fetch value records from bengaluru and chennai
+      let bangarr=maplocations.get('bengaluru')
+      let chennarr=maplocations.get('chennai')
+      console.log(bangarr)
+      console.log(chennarr)
+      
+      //spread operator is used to fetch all records in array it is denoted by ...
+      let totalarr=[...bangarr,...chennarr]
+      console.log(totalarr)
+      for(let i in totalarr){
+        if(totalarr[i].salary>=20000){
+          console.log(totalarr[i])
+        }
+      }
+    </script>
+  </body>
+</html>
