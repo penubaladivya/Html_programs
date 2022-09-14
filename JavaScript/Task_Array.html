@@ -103,6 +103,20 @@
         numarr[n - i - 1] = temp;
       }
       console.log(numarr);
+
+      //this keyword
+      console.log("*****This*****")
+      // var x=this
+      // console.log("this value",x.objemp.ename())
+      var objemp={
+        firstName:"divya",
+        lastName:"shree",
+        ename:function(){return this.firstName+" "+this.lastName},
+        eno:215,
+        esal:20000
+      }
+      console.log("Ename:",objemp.ename())
+
     </script>
   </body>
 </html>
